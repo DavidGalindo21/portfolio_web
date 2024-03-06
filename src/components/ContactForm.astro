@@ -1,0 +1,62 @@
+---
+import Mail from "./icons/Mail.astro";
+---
+
+<form
+    action="https://formspree.io/f/mpzvpbla"
+    method="POST"
+    class="flex flex-col gap-y-8"
+>
+    <h1 class="text-pretty text-gray-700 dark:text-white font-bold lg:text-5xl text-4xl mb-3">
+        ¿Qué esperas?😉
+    </h1>
+    <div class="flex md:flex-row flex-col gap-x-10 gap-y-6">
+        <div class="w-full">
+            <label
+                for="email-address-icon"
+                class="block mb-2 text-sm font-medium text-dark dark:text-white"
+                >Nombre Completo</label
+            >
+
+            <input
+                type="text"
+                name="Nombre"
+                id="Nombre"
+                class="border-2 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 border-gray-600  dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder:text-gray-600 dark:placeholder:text-white"
+                placeholder="David Alejandro Guardado Galindo"
+            />
+        </div>
+        <div class="w-full">
+            <label
+                for="email-address-icon"
+                class="block mb-2 text-sm font-medium text-dark dark:text-white">Correo</label
+            >
+            <div class="relative">
+                <Mail />
+                <input
+                    type="email"
+                    name="Email"
+                    id="Email"
+                    class="border-2 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 border-gray-600  dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder:text-gray-600 dark:placeholder:text-white "
+                    placeholder="davidgalindo74@gmail.com"
+                />
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <label for="message" class="block mb-2 text-sm font-medium text-dark dark:text-white"
+            >Mensaje</label
+        >
+        <textarea
+            id="Mensaje"
+            name="Mensaje"
+            rows="4"
+            class="block p-2.5 w-full text-sm text-dark rounded-lg border-2 focus:ring-blue-500 focus:border-blue-500  border-gray-600 dark:bg-gray-700 placeholder:text-gray-600 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:placeholder:text-white"
+            placeholder="Escribe tu mensaje..."></textarea>
+    </div>
+    <input
+        type="submit"
+        value="Enviar Mensaje"
+        class="bg-yellow-400 text-slate-900 font-semibold hover:cursor-pointer hover:bg-yellow-400/90 transition h-[3rem] w-[10rem] mx-auto rounded-full"
+    />
+</form>

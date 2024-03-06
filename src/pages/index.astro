@@ -1,0 +1,86 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import Gmail from "../components/icons/Gmail.astro";
+import GitHub from "../components/icons/GitHub.astro";
+import Code from "../components/icons/Code.astro";
+import User from "../components/icons/User.astro";
+import SocialPill from "../components/SocialPill.astro";
+import Section from "../components/Section.astro";
+import Projects from "../components/Projects.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Footer from "../components/Footer.astro";
+import ContactForm from "../components/ContactForm.astro";
+---
+
+<Layout
+	title="Bienvenidos a mi portafolio - Desarrollador y Programador web."
+	description="Contrara a David para crear tu sitio web."
+>
+	<main class="px-4">
+		<Section class="py-40 pb-32">
+			<img
+				src="/foto.webp"
+				class="rounded-full size-14 mb-4"
+				alt="David Alejandro"
+			/>
+			<h1
+				class="text-gray-700 dark:text-white flex flex-row gap-x-3 text-3xl md:text-4xl lg:text-5xl font-bold pb-6 lg:pb-10"
+			>
+				Hey, soy David <a
+					href="https://www.linkedin.com/in/david-alejandro-guardado-galindo-0a3a651b9/"
+					target="_blank"
+					rel="noopener"
+					class="flex items-center"
+					><Badge>Disponible para trabajar</Badge></a
+				>
+			</h1>
+			<h2 class="text-xl lg:text-2xl opacity-80 text-gray-700 dark:text-gray-100 text-wrap max-w-[700px]">
+				<span>+3 año de experiencia.</span>
+				<span class="text-green-700 dark:text-green-400/90"> Desarrollador Web.</span>
+				<span class="text-gray-700 dark:text-gray-100"> De Aguascalientes, México.</span>
+				<span class="text-red-600 opacity-75 dark:text-red-400/90"
+					>Especializado en crear sitios web.</span
+				>
+			</h2>
+
+			<nav class="flex gap-4 mt-8 flex-wrap">
+				<SocialPill 
+					href="https://www.linkedin.com/in/david-alejandro-guardado-galindo-0a3a651b9/" 
+				>
+					<LinkedIn class="size-4 md:size-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/DavidGalindo21">
+					<GitHub class="size-4 md:size-6" />
+					GitHub
+				</SocialPill>
+				<SocialPill href="mailto:guardadodavid74@gmail.com">
+					<Gmail class="size-4 md:size-6" />
+					guardadodavid74@gmail.com
+				</SocialPill>
+			</nav>
+		</Section>
+
+		<Section id="proyectos">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-gray-700 dark:text-white">
+				<Code class="size-7" />
+				Proyectos
+			</h2>
+			<Projects />
+		</Section>
+
+		<Section id="sobre-mi" >
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-gray-700 dark:text-white" >
+				<User class="size-7" />
+				Sobre mi
+			</h2>
+			<AboutMe />
+		</Section>
+		<Section id="contacto" >
+			<ContactForm />
+		</Section>
+	</main>
+	<Footer />
+</Layout>

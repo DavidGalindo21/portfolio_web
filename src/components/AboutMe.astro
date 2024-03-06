@@ -1,0 +1,42 @@
+---
+const personalImageAlt = "David Alejandro";
+---
+
+<article
+  class="flex flex-col items-center justify-center gap-8 text-dark md:flex-row"
+>
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 dark:text-white [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+  >
+    <p>
+      Mi nombre es David Alejandro. <strong
+        >A la edad de 15 años empecé en la programación</strong
+      > con una laptop que aún sigue dando para más aunque este algo viejita.
+    </p>
+
+    <p>
+      Algunos de mis logros a destacar se incluyen <strong>
+        ser líder en proyectos de programación universitarios, <terminando
+          class="italic"
+          >siendo estos terminados de manera satisfactoria.</terminando
+        ></strong
+      >
+    </p>
+
+    <p>
+      Como programador me considero alguien quien aprende de manera rápida y <strong
+        >continuamente actualizandome de las tecnologías que se presentan día
+        con día</strong
+      >.
+    </p>
+  </div>
+
+  <img
+    width="200"
+    height="200"
+    src="/foto.webp"
+    alt={personalImageAlt}
+    class="order-1 object-cover w-64 h-full p-1 bg-white md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl dark:bg-yellow-500/5 ring-1 ring-white/20"
+    style="object-position: 50% 50%"
+  />
+</article>
