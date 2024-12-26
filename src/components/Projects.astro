@@ -6,6 +6,7 @@ import Bootstrap from "./icons/Bootstrap.astro";
 import GitHub from "./icons/GitHub.astro";
 import PHP from "./icons/PHP.astro";
 import MySQL from "./icons/MySQL.astro";
+import Link from "./icons/Link.astro";
 ---
 
 <div class="flex flex-col gap-y-16">
@@ -19,7 +20,102 @@ import MySQL from "./icons/MySQL.astro";
                 <img
                     alt="Imagen de mis proyectos"
                     class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
-                    src="https://i.ibb.co/MGbmHDp/proyecto1.png"
+                    src="/img/proyecto4.png"
+                />
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 md:max-w-lg">
+            <h3 class="text-2xl font-bold text-yellow-400">
+                Sistema Web de Servicios Para Reparaciones Mecánicas
+                Automotrices
+            </h3>
+            <div class="flex flex-wrap mt-2">
+                <ul class="flex flex-wrap md:flex-nowrap mb-2 gap-x-2">
+                    <li>
+                        <span
+                            class="flex gap-x-2 rounded-full text-xs bg-orange-300/90 text-white py-1 px-2 my-2"
+                        >
+                            <HtmlLogo class="size-4" />
+                            HTML
+                        </span>
+                    </li>
+                    <li>
+                        <span
+                            class="flex gap-x-2 rounded-full text-xs bg-blue-400/90 text-white py-1 px-2 my-2"
+                        >
+                            <CSSLogo class="size-4" />
+                            CSS
+                        </span>
+                    </li>
+                    <li>
+                        <span
+                            class="flex gap-x-2 rounded-full text-xs bg-yellow-300/70 text-white py-1 px-2 my-2"
+                        >
+                            <JS class="size-4" />
+                            JavaScript
+                        </span>
+                    </li>
+                    <li>
+                        <span
+                            class="flex gap-x-2 rounded-full text-xs bg-purple-300 text-white py-1 px-2 my-2"
+                        >
+                            <Bootstrap class="size-4" />
+                            Bootstrap
+                        </span>
+                    </li>
+                    <li>
+                        <span
+                            class="flex gap-x-2 rounded-full text-xs bg-purple-500 text-white py-1 px-2 my-2"
+                        >
+                           <PHP class="size-4" />
+                            PHP
+                        </span>
+                    </li>
+                    <li>
+                        <span
+                            class="flex gap-x-2 rounded-full text-xs bg-blue-200/70 text-white py-1 px-2 my-2"
+                        >
+                           <MySQL class="size-4" />
+                            MySQL
+                        </span>
+                    </li>
+                </ul>
+                <div class="mt-2 text-gray-600 dark:text-gray-200">
+                    Sistema Web que contiene los servicios de Blog, Agendar
+                    Citas, Venta/Compra de autos, y Venta de Seguros.
+                </div>
+                <footer class="flex items-end justify-start mt-4 gap-x-4">
+                    <a
+                        class="bg-white/5
+                            dark:text-white dark:hover:text-gray-950
+                                    border border-gray-300 text-dark
+                                    rounded-full
+                                    inline-flex justify-center items-center gap-x-2
+                                    py-1 px-2 md:py-2 md:px-4
+                                    transition
+                                    hover:scale-110 hover:bg-gray-300"
+                        target="_blank"
+                        href="https://safetravel.lat/SISTEMA_WEB/index.html"
+                    >
+                        <Link class="size-7" />
+                        Ver en línea</a
+                    >
+                </footer>
+            </div>
+        </div>
+    </article>
+
+    <article
+        class="flex items-center flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0"
+    >
+        <div class="w-full md:w-1/2">
+            <div
+                class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50"
+            >
+                <img
+                    alt="Imagen de mis proyectos"
+                    class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+                    src="/img/proyecto1.png"
                 />
             </div>
         </div>
@@ -99,7 +195,7 @@ import MySQL from "./icons/MySQL.astro";
                     alt="Imagen de mis proyectos"
                     class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
                     loading="lazy"
-                    src="https://i.ibb.co/qdjmhxJ/proyecto2.png"
+                    src="/img/proyecto2.png"
                 />
             </div>
         </div>
@@ -192,7 +288,7 @@ import MySQL from "./icons/MySQL.astro";
                     alt="Imagen de mis proyectos"
                     class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
                     loading="lazy"
-                    src="https://i.ibb.co/zsNhd8W/proyecto3.png"
+                    src="/img/proyecto3.png"
                 />
             </div>
         </div>
